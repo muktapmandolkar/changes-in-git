@@ -1,0 +1,24 @@
+Variable 	Description
+$0	The name of the script being executed.
+
+$n	Positional parameters; n is a positive number representing the nth argument passed to the script (e.g., $1 is the first argument, $2 is the second, etc.).
+	 Arguments after $9 must be enclosed in braces, such as ${10}.
+
+$#	The number of arguments (positional parameters) passed to the script.
+
+$*	All arguments passed to the script, treated as a single string. The arguments are separated by the first character of the IFS 
+	(Internal Field Separator) variable, typically a space.
+
+$@	All arguments passed to the script, treated as separate strings. This is useful when you want to preserve the individuality of arguments, 
+	especially those with spaces, when enclosed in double quotes ("$@").
+
+$?	The exit status of the last command executed. A value of 0 generally indicates success, while any non-zero value indicates an error.
+
+$$	The process ID (PID) of the current shell or script. This is often used to create unique temporary filenames.
+
+$!	The process ID (PID) of the last command executed in the background (using the & operator).
+
+$-	The current options/flags set in the shell (e.g., -i for interactive, -m for monitor mode).
+
+
+$_	The last argument of the previous command executed.  ==
